@@ -29,4 +29,9 @@ public class FizzBuzzTest {
         Assert.assertEquals("FizzBuzz", fizzBuzz.NumberToString(15));
         Assert.assertEquals("FizzBuzz", fizzBuzz.NumberToString(75));
     }
+
+    @Test
+    public void itShouldHaveOnLongRunningTestToKeepCiBusy() throws InterruptedException {
+        Thread.sleep(10000);
+    }
 }
